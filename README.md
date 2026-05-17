@@ -4,7 +4,7 @@
 
 A small single-page generator. Each cat has a name, an age, a location, two sentences of quietly disappointed biography, and a color palette that vaguely matches their fur.
 
-No purpose. No backend. No API. Just 37 cats.
+No purpose. No backend. No API. Just 42 cats.
 
 ## why this exists
 
@@ -37,7 +37,7 @@ A non-exhaustive sample of who lives in here:
 - **Otto**, 13 — lives in a retirement home in Hamburg. Not officially a resident.
 - **Magda**, 10 — found in a stairwell in 2016. Sits on exactly one tile in the kitchen.
 
-37 in total. They are not based on anyone's real cat, and any resemblance to your cat is your problem.
+42 in total. They are not based on anyone's real cat, and any resemblance to your cat is your problem.
 
 ## license
 

@@ -304,6 +304,46 @@ export const cats: Cat[] = [
     quirk: "Refuses to acknowledge anyone allergic to chamomile.",
     palette: ["#2a2418", "#5a4a2c", "#a08c5c"],
   },
+  {
+    name: "Nikolai",
+    age: 6,
+    location: "A late-night kebab place in Reykjavík",
+    bio: "Has tested every sauce. Has opinions on three of them.",
+    quirk: "Sits on the cucumber tray. Nobody knows why.",
+    palette: ["#1a1612", "#4e3a2c", "#9c7c5e"],
+  },
+  {
+    name: "Suvi",
+    age: 4,
+    location: "A sauna in rural Finland",
+    bio: "Prefers the cooldown room. Has rules about who can sit where.",
+    quirk: "Hisses at anyone who brings their phone in.",
+    palette: ["#f6f4ee", "#c8c0b0", "#7e7468"],
+  },
+  {
+    name: "Casimir",
+    age: 11,
+    location: "A locksmith's shop in Antwerp",
+    bio: "Has watched 18 years of keys being cut. Has not learned a thing.",
+    quirk: "Sits on the bell. Customers ring it anyway.",
+    palette: ["#28201a", "#5a4838", "#a08868"],
+  },
+  {
+    name: "Branwen",
+    age: 2,
+    location: "A puppet workshop in Liège",
+    bio: "Is jealous of the puppets. Will not say why.",
+    quirk: "Knocks over the marionettes when no one is looking.",
+    palette: ["#1c1a1e", "#3e3a44", "#7e788a"],
+  },
+  {
+    name: "Demir",
+    age: 9,
+    location: "A barbershop in Istanbul",
+    bio: "Has been swept off the chair 4,000 times. Returns every time.",
+    quirk: "Watches the clippers with deep suspicion.",
+    palette: ["#0e0c0a", "#3a2e22", "#8a6e4e"],
+  },
 ];
 
 export function getRandomCat(exclude?: string): Cat {
