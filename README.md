@@ -2,6 +2,8 @@
 
 > Fictional cats living small lives across Europe. Press a button, get a cat.
 
+![preview](public/preview.png)
+
 A small single-page generator. Each cat has a name, an age, a location, two sentences of quietly disappointed biography, and a color palette that vaguely matches their fur.
 
 No purpose. No backend. No API. Just 42 cats.
