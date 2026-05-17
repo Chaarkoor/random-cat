@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter/index.css";
+@import "@fontsource-variable/jetbrains-mono/index.css";
+
+@theme {
+  --font-sans: "Inter Variable", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
+
+  --color-bg: #0a0a0c;
+  --color-bg-elev: #131316;
+  --color-line: #1f1f24;
+  --color-line-2: #2a2a30;
+  --color-text: #e7e7ea;
+  --color-text-dim: #8a8a92;
+  --color-text-faint: #5a5a62;
+  --color-accent: #bc52ee;
+  --color-accent-dim: #6b2d8a;
+}
+
+html, body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}

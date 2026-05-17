@@ -1,0 +1,55 @@
+---
+import CatCard from "../components/CatCard";
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>random cat</title>
+    <meta
+      name="description"
+      content="A small generator of fictional cats living small lives across Europe."
+    />
+    <meta name="theme-color" content="#0a0a0c" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <main class="flex-1 flex flex-col items-center justify-center px-6 py-16">
+      <header class="text-center mb-12">
+        <h1 class="text-2xl font-medium tracking-tight">random cat</h1>
+        <p class="mt-2 font-mono text-[12px] text-[var(--color-text-faint)]">
+          fictional cats. small lives. press space for another.
+        </p>
+      </header>
+
+      <CatCard client:load />
+    </main>
+
+    <footer
+      class="px-6 py-6 flex items-center justify-between font-mono text-[11px] text-[var(--color-text-faint)]"
+    >
+      <span>
+        by
+        <a
+          href="https://github.com/Chaarkoor"
+          class="hover:text-[var(--color-accent)] transition-colors"
+          target="_blank"
+          rel="noopener"
+        >
+          chaarkor
+        </a>
+      </span>
+      <a
+        href="https://github.com/Chaarkoor/random-cat"
+        class="hover:text-[var(--color-accent)] transition-colors"
+        target="_blank"
+        rel="noopener"
+      >
+        source
+      </a>
+    </footer>
+  </body>
+</html>
