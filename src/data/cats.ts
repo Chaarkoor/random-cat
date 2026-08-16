@@ -344,6 +344,30 @@ export const cats: Cat[] = [
     quirk: "Watches the clippers with deep suspicion.",
     palette: ["#0e0c0a", "#3a2e22", "#8a6e4e"],
   },
+  {
+    name: "Ilse",
+    age: 8,
+    location: "A piano tuner's workshop in Leipzig",
+    bio: "Sleeps inside the grand piano whenever the lid is open. Has been shut in twice, both times on purpose.",
+    quirk: "Leaves the room for anything in a minor key.",
+    palette: ["#241f1a", "#5c4a35", "#c2a578"],
+  },
+  {
+    name: "Nevena",
+    age: 3,
+    location: "An all-night laundrette in Ljubljana",
+    bio: "Works through the warm dryers in a fixed order. Will wait for the right one rather than take another.",
+    quirk: "Sits only on laundry that hasn't been folded yet.",
+    palette: ["#e6e8ea", "#b9c2c8", "#6f7b84"],
+  },
+  {
+    name: "Emil",
+    age: 12,
+    location: "A ferry ticket office in Split",
+    bio: "Has never been on the ferry. Sees it off twice a day regardless.",
+    quirk: "Knows the timetable better than the staff do.",
+    palette: ["#10161c", "#2f4a5c", "#7fa3b8"],
+  },
 ];
 
 export function getRandomCat(exclude?: string): Cat {
