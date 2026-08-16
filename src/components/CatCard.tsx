@@ -19,10 +19,15 @@ export default function CatCard() {
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.code === "Space" || e.key === "Enter") {
-        e.preventDefault();
-        next();
+      if (e.code !== "Space" && e.key !== "Enter") return;
+      // Held key fires keydown on repeat — one cat per press is enough.
+      if (e.repeat) return;
+      // The button handles its own keys; skipping avoids shuffling twice.
+      if ((e.target as HTMLElement | null)?.closest("button, a, input, textarea")) {
+        return;
       }
+      e.preventDefault();
+      next();
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
