@@ -30,6 +30,12 @@ pnpm dev
 
 Then open `http://localhost:7203`. Press space for another cat.
 
+## linking to one cat
+
+The cat currently on screen is kept in the URL fragment, so `/#nevena` always opens on Nevena
+instead of rolling the dice. An unknown name falls back to a random cat, and shuffling rewrites
+the fragment without touching your back button.
+
 ## the cats
 
 A non-exhaustive sample of who lives in here:

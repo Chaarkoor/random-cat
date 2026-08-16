@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
 import { cats, getRandomCat, type Cat } from "../data/cats";
 
+const slug = (name: string) => name.toLowerCase();
+
 export default function CatCard() {
   const [cat, setCat] = useState<Cat>(cats[0]!);
   const [fading, setFading] = useState(false);
+  const [settled, setSettled] = useState(false);
 
   const next = () => {
     setFading(true);
@@ -14,8 +17,20 @@ export default function CatCard() {
   };
 
   useEffect(() => {
-    setCat(getRandomCat());
+    // /#nevena opens on that cat; anything else falls back to a random one.
+    const asked = decodeURIComponent(window.location.hash.slice(1)).trim().toLowerCase();
+    const requested = asked ? cats.find((c) => slug(c.name) === asked) : undefined;
+    setCat(requested ?? getRandomCat());
+    setSettled(true);
   }, []);
+
+  useEffect(() => {
+    if (!settled) return;
+    const hash = `#${slug(cat.name)}`;
+    if (window.location.hash !== hash) {
+      window.history.replaceState(null, "", hash);
+    }
+  }, [cat, settled]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
